@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'jquery-datetimepicker'
-  s.version     = '0.0.2'
+  s.version     = '0.0.3'
   s.date        = '2013-06-03'
   s.summary     = "Date and Time Picker into one!"
   s.description = "Simple pop up widget for picking a date and time. Also can set reminders and alerts"
