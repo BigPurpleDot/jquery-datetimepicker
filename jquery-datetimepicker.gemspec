@@ -7,5 +7,5 @@ Gem::Specification.new do |s|
   s.authors     = ["Aldo Sarmiento", "Chris Kendrick", "Clifford Simon"]
   s.email       = 'cliff@bigpurpledot.com'
   s.files       = Dir["{lib,vendor}/**/*"] + ["README.md"]
-  s.homepage    = 'http://rubygems.org/gems/jquery-datetimepicker'
+  s.homepage    = 'https://github.com/BigPurpleDot/jquery-datetimepicker'
 end
