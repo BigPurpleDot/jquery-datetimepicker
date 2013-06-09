@@ -68,7 +68,7 @@
 				left: 13px;
 
 				span{
-					background: url(backend-v2/cal-month-prev-arrow.png)  0 0 no-repeat;
+					background: url(cal-month-prev-arrow.png)  0 0 no-repeat;
 					top: 13px;
 					margin-top: 0;
 					left: 9px;
@@ -79,7 +79,7 @@
 				top: 7px;
 				right: 0;
 				span{
-					background: url(backend-v2/cal-month-next-arrow.png) 0 0 no-repeat;;
+					background: url(cal-month-next-arrow.png) 0 0 no-repeat;;
 					top:18px;
 				}
 			}
@@ -161,7 +161,7 @@
 
 			.clock-up-arrow{
 				height: 10px;
-				background: url(backend-v2/up-arrow-cal.png) no-repeat center center;
+				background: url(up-arrow-cal.png) no-repeat center center;
 				width: 24px;
 				margin-bottom: 5px;
 				cursor: pointer;
@@ -169,7 +169,7 @@
 
 			.clock-down-arrow{
 				height: 10px;
-				background: url(backend-v2/down-arrow-cal.png) no-repeat center center;
+				background: url(down-arrow-cal.png) no-repeat center center;
 				width: 24px;
 				margin-top: 5px;
 				cursor: pointer;
@@ -219,7 +219,7 @@
 		.alerts-label{
 			float: left;
 			font-size: 12px;
-			background: url(backend-v2/reminder-env.png) no-repeat 0 center;
+			background: url(reminder-env.png) no-repeat 0 center;
 			padding: 20px 35px;
 		}
 
@@ -347,7 +347,7 @@
 		}
 
 		a.selected{
-			background-image: url(backend-v2/table-sort-arrow-down.png);
+			background-image: url(table-sort-arrow-down.png);
 			background-position: 99px center;
 			background-repeat: no-repeat;
 		}
