@@ -1,0 +1,382 @@
+.arrow_box-ca {
+	background: rgb(221, 221, 221);
+	width: 232px;
+	position: absolute;
+	z-index: 1000;
+	border: thin solid rgb(173, 173, 173);
+}
+
+.arrow_box-ca:after, .arrow_box-ca:before {
+	bottom: 100%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.arrow_box-ca:after {
+	border-color: rgba(255, 255, 255, 0);
+	border-bottom-color: #dddddd;
+	border-width: 9px;
+	left: 50%;
+	margin-left: -9px;
+}
+
+.arrow_box-ca:before {
+	border-color: rgba(128, 201, 232, 0);
+	border-bottom-color: #adadad;
+	border-width: 10px;
+	left: 50%;
+	margin-left: -10px;
+}
+
+.calender-container {
+	display: inline-block;
+	background: rgb(231, 231, 231);
+
+	.actions {
+		display: none;
+	}
+
+	.reminder-date-add {
+		width: 232px;
+		margin: 0 auto;
+
+		.ui-datepicker-inline {
+				padding: 0;
+				width: auto;
+		}
+
+		.ui-corner-all{
+			-webkit-border-radius: 0;
+			border-radius: 0;
+			border: none;
+			background: transparent;
+		}
+
+		.ui-datepicker-header{
+			border: none;
+			background: transparent;
+			padding:0;
+			color: rgb(184, 184, 184);
+			height: 40px;
+
+			.ui-datepicker-prev{
+				top: 5px;
+				left: 13px;
+
+				span{
+					background: url(backend-v2/cal-month-prev-arrow.png)  0 0 no-repeat;
+					top: 13px;
+					margin-top: 0;
+					left: 9px;
+				}
+			}
+
+			.ui-datepicker-next{
+				top: 7px;
+				right: 0;
+				span{
+					background: url(backend-v2/cal-month-next-arrow.png) 0 0 no-repeat;;
+					top:18px;
+				}
+			}
+		}
+
+		.ui-datepicker-calendar{
+			border-left: none;
+			thead{
+				background: rgb(74, 154, 255);
+				th{
+					color: #fff;
+				}
+			}
+			td{
+				border: 0px;
+			}
+		}
+
+		.ui-state-default{
+			background: transparent;
+			color: rgb(143, 143, 143);
+		}
+
+		.ui-datepicker-title{
+			font-weight: normal;
+		}
+
+		.ui-datepicker td{
+			padding: 0;
+			a{
+				padding: 5px;
+				text-align: center;
+				text-decoration: none;
+			}
+		}
+
+		.ui-state-default, .ui-widget-content .ui-state-default{
+			border-top: thin solid rgb(241, 241, 241);
+			border-bottom: thin solid #d1d1d1;
+			border-left: thin solid #d1d1d1;
+			border-right: thin solid rgb(241, 241, 241);
+			color: rgb(121, 121, 121);
+		}
+
+		.ui-state-active{
+			background: rgb(182, 182, 182);
+			color: #fff;
+		}
+
+		.ui-datepicker-next{
+			right: 15px;
+		}
+
+		.ui-datepicker-next:hover{
+			right: 15px;
+		}
+
+		.ui-datepicker-title{
+			line-height: 3em;
+			color: rgb(134, 134, 134);
+			text-transform: uppercase;
+		}
+	}
+
+	.reminder-time-set {
+		width: 180px;
+		margin: 20px auto;
+
+		li{
+			display: inline-block;
+
+			.clock-value{
+				padding: 12px 5px;
+				font-size: 26px;
+				color: #868686;
+				background: #fff;
+				text-align: center;
+			}
+
+			.clock-up-arrow{
+				height: 10px;
+				background: url(backend-v2/up-arrow-cal.png) no-repeat center center;
+				width: 24px;
+				margin-bottom: 5px;
+				cursor: pointer;
+			}
+
+			.clock-down-arrow{
+				height: 10px;
+				background: url(backend-v2/down-arrow-cal.png) no-repeat center center;
+				width: 24px;
+				margin-top: 5px;
+				cursor: pointer;
+			}
+		}
+
+		li.clock-time {
+			.clock-up-arrow, .clock-down-arrow{
+				width: 50px;
+			}
+		}
+
+		.clock-operator {
+			font-size: 26px;
+			color: #868686;
+			padding: 0 5px;
+		}
+	}
+
+	.scheduled-alerts{
+		overflow: auto;
+		margin-left: -1px;
+		margin-bottom: 10px;
+		margin-top: 10px;
+
+    .alert-record {
+      background-color: #fff;
+      text-align: left;
+      overflow: hidden;
+      padding: 5px;
+
+      .cancel {
+        cursor: pointer;
+        float: right;
+        display: block;
+        background-color: #eee;
+      }
+    }
+  }
+
+	.add-alert-container{
+		text-align: center;
+		color: #868686;
+		border-top: thin solid #cfcfce;
+		padding: 5px 10px;
+
+		.alerts-label{
+			float: left;
+			font-size: 12px;
+			background: url(backend-v2/reminder-env.png) no-repeat 0 center;
+			padding: 20px 35px;
+		}
+
+		.alert-trigger-container{
+			float:right;
+			padding: 0 10px;
+		}
+
+		.alert-trigger{
+			position: relative;
+			background: #fff;
+			height:17px;
+			width: 50px;
+			margin: 9px 0;
+			border-radius: 10px;
+			-webkit-border-radius: 10px;
+			overflow: hidden;
+
+			.slider{
+				position: absolute;
+				height: 100%;
+				width: 17px;
+				top: 0;
+				border-radius: 10px;
+			-webkit-border-radius: 10px;
+				cursor: pointer;
+			}
+
+			.slider.off{
+				background: #b6b6b6;
+			}
+
+			.slider.on{
+				background: #4a9aff;
+				right: 0;
+			}
+		}
+
+		.trigger-labels{
+			font-size: 10px;
+		}
+	}
+
+	.alert-add{
+		background: #4a9aff;
+		padding: 10px;
+		display: none;
+		color: #fff;
+
+		.alert-settings{
+
+			a{
+			 color: #fff !important;
+			}
+
+			>ul{
+				display: inline-block;
+				cursor: pointer;
+
+				>li{
+					float:left;
+					background: #e7e7e7;
+					padding: 10px 0;
+					color:#4a9aff;
+					font-size: 20px;
+					width: 50px;
+					text-align: center;
+				}
+				li.alert-before{
+					background: #3988e9;
+					color: #fff;
+					font-size: 12px;
+					width: 110px;
+					text-align: left;
+					padding: 0;
+					overflow:hidden;
+					position: relative;
+
+					a{
+						color: #fff;
+						padding: 8px 10px;
+						display: block;
+					}
+
+					ul{
+						position: absolute;
+						width: 100%;
+						background: #3988e9;
+
+						li{
+							a{
+								border-top: thin solid #fff;
+							}
+						}
+					}
+				}
+
+				li.alert-before:hover{
+					overflow: visible;
+				}
+
+				li.add-reminder-time-input{
+					padding:0;
+
+					input{
+						height: 25px;
+						margin: 2px;
+						line-height: 25px;
+						width: 37px;
+						text-align: center;
+						background: transparent;
+						border: none;
+						outline: none;
+						color: #4a9aff;
+						font-size: 15px;
+					}
+				}
+
+				li.btn-add-alert{
+					font-weight: bold;
+					font-size: 32px;
+					padding: 8px 0;
+				}
+			}
+		}
+
+		a.selected{
+			background-image: url(backend-v2/table-sort-arrow-down.png);
+			background-position: 99px center;
+			background-repeat: no-repeat;
+		}
+	}
+
+	.add-reminder-trigger-show{
+		overflow: visible !important;
+		background: rgb(231, 231, 231);
+	}
+}
+
+.actions{
+	float: right;
+
+	span {
+		display: inline-block;
+		padding: 5px 10px;
+		min-width: 40px;
+		text-align:center;
+		margin: 15px 5px;
+		cursor: pointer;
+	}
+
+	.cancel {
+		background: #b6b6b6;
+	}
+
+	.ok {
+		background: #4a9aff;
+		color: #fff;
+	}
+}
