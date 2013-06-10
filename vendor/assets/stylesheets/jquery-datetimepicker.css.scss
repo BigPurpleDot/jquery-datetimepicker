@@ -270,11 +270,6 @@
 		color: #fff;
 
 		.alert-settings{
-			ul {
-				padding: 0;
-				list-style: none;
-			}
-
 			a{
 			 color: #fff !important;
 			}
@@ -282,6 +277,8 @@
 			>ul{
 				display: inline-block;
 				cursor: pointer;
+				list-style-type: none;
+				padding-left: 0;
 
 				>li{
 					float:left;
@@ -293,6 +290,7 @@
 					text-align: center;
 				}
 				li.alert-before{
+					height: 37px;
 					background: #3988e9;
 					color: #fff;
 					font-size: 12px;
@@ -304,15 +302,17 @@
 
 					a{
 						color: #fff;
-						padding: 0;
-						height: 30px;
+						padding: 12px 10px 11px 10px;
 						display: block;
+						text-decoration: none;
 					}
 
 					ul{
 						position: absolute;
 						width: 100%;
 						background: #3988e9;
+						list-style-type: none;
+						padding-left: 0;
 
 						li{
 							a{
@@ -327,7 +327,7 @@
 				}
 
 				li.add-reminder-time-input{
-					padding:0;
+					padding: 4px 0 3px 0;
 
 					input{
 						height: 25px;
@@ -344,9 +344,9 @@
 				}
 
 				li.btn-add-alert{
+					padding: 0;
 					font-weight: bold;
 					font-size: 32px;
-					padding: 8px 0;
 				}
 			}
 		}
