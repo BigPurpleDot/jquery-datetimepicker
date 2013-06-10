@@ -270,6 +270,10 @@
 		color: #fff;
 
 		.alert-settings{
+			ul {
+				padding: 0;
+				list-style: none;
+			}
 
 			a{
 			 color: #fff !important;
@@ -300,7 +304,8 @@
 
 					a{
 						color: #fff;
-						padding: 8px 10px;
+						padding: 0;
+						height: 30px;
 						display: block;
 					}
 
