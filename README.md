@@ -4,7 +4,7 @@
 
 Add this line to your application's Gemfile:
 
-    gem 'query-datetimepicker'
+    gem 'jquery-datetimepicker'
 
 Add the following to your Javascript file:
 
