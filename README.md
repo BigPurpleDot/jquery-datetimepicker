@@ -58,6 +58,10 @@ Authors under Big Purple Dot
 * Chris Kendrick
 * Clifford Simon
 
+## Contact
+
+For any questions or concerns, please email cliff@bigpurpledot.com
+
 ## License
 
 jquery-datetimepicker is under the MIT license (http://en.wikipedia.org/wiki/MIT_License).
