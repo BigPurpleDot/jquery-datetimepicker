@@ -36,14 +36,14 @@ $('.some-class-name').dateTimePicker({
 	onClickOutside: 'OK', // 'OK' or 'cancel'. Which button you want clicking outside to simulate
 	onSelectDate: $.noop, // When user clicks on a date. Passes dateText, datepicker instance, and associate input field as arguments.
 	onSetAlert: $.noop, // passes added alert as argument
-  onRemoveAlert: $.noop, // passes removed alert and alert instance as argument
-  onCancel: $.noop,
-  onOK: $.noop,
-  defaultDate: null,
-  defaultTime: null, // time format to pass in: {hour: 12, minuteOne: 0, minuteTwo: 5, ampm: 'pm'}
-  defaultAlerts: $.noop, // alerts format to pass in: [{time: 5, threshold: 'Mins', data : {'alert-id' : 1}}, {time: 10, threshold: 'Days'}]. Threshold can be of the following ['Mins', 'Hours', 'Days', 'Weeks']
-  insert: null, // css id or function where you want to add the widget
-  hideAlertUI: null // boolean to show and give the ability to add alerts
+	onRemoveAlert: $.noop, // passes removed alert and alert instance as argument
+	onCancel: $.noop,
+	onOK: $.noop,
+	defaultDate: null,
+	defaultTime: null, // time format to pass in: {hour: 12, minuteOne: 0, minuteTwo: 5, ampm: 'pm'}
+	defaultAlerts: $.noop, // alerts format to pass in: [{time: 5, threshold: 'Mins', data : {'alert-id' : 1}}, {time: 10, threshold: 'Days'}]. Threshold can be of the following ['Mins', 'Hours', 'Days', 'Weeks']
+	insert: null, // css id or function where you want to add the widget
+	hideAlertUI: null // boolean to show and give the ability to add alerts
 });
 ```
 
