@@ -49,7 +49,7 @@ $('.some-class-name').dateTimePicker({
 
 ## Sample
 
-Coming soon
+http://evening-coast-9059.herokuapp.com/
 
 ## Contributors
 
