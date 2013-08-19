@@ -8,13 +8,15 @@ Add this line to your application's Gemfile:
 
 Add the following to your Javascript file:
 
-    //= require jquery-ui
+    //= require jquery
+    //= require jquery-ui.datepicker
     //= require jquery-datetimepicker
 
 Add the following line to your stylesheet file:
 
 ```scss
-@import "jquery-datetimepicker.css";
+*= require jquery.ui.datepicker
+*= require jquery-datetimepicker
 ```
 
 ## Usage
