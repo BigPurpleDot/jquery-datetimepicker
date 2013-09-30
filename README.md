@@ -8,14 +8,11 @@ Add this line to your application's Gemfile:
 
 Add the following to your Javascript file:
 
-    //= require jquery
-    //= require jquery-ui.datepicker
     //= require jquery-datetimepicker
 
 Add the following line to your stylesheet file:
 
 ```scss
-*= require jquery.ui.datepicker
 *= require jquery-datetimepicker
 ```
 
@@ -45,7 +42,14 @@ $('.some-class-name').dateTimePicker({
 	defaultTime: null, // time format to pass in: {hour: 12, minuteOne: 0, minuteTwo: 5, ampm: 'pm'}
 	defaultAlerts: $.noop, // alerts format to pass in: [{time: 5, threshold: 'Mins', data : {'alert-id' : 1}}, {time: 10, threshold: 'Days'}]. Threshold can be of the following ['Mins', 'Hours', 'Days', 'Weeks']
 	insert: null, // css id or function where you want to add the widget
-	hideAlertUI: null // boolean to show and give the ability to add alerts
+	hideAlertUI: null, // boolean to show and give the ability to add alerts
+  hideTimeUI: null, // boolean to hide the time picker
+  hideCalendarUI: null, // boolean to hide the date picker
+  horizontalView: null, // (optional) True if you want date and time to have a horizontal view. currently does not work with alerts. will default hideAlertUI to true
+  pointer: { // location and offset (in pixels) from the the middle of whichever selected side
+    side: 'top', //top, bottom, left, right
+    offset: 0
+  }
 });
 ```
 
@@ -56,9 +60,9 @@ http://evening-coast-9059.herokuapp.com/
 ## Contributors
 
 Authors under Big Purple Dot
+* Clifford Simon
 * Aldo Sarmiento
 * Chris Kendrick
-* Clifford Simon
 
 ## Contact
 
